@@ -28,4 +28,4 @@ print(data_without_empty.info())
 data_without_empty.reset_index(drop=True, inplace=True)
 print(data_without_empty.head())
 
-data_without_empty.to_json('Data/data_clean.json', index=False)
+data_without_empty.to_json('Data/data_without_churn_empty.json', index=False)
