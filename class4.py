@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -28,4 +27,5 @@ df_without_out.loc[outliers_index, 'cliente.tempo_servico'] = np.ceil(
 sns.boxplot(df_without_out['cliente.tempo_servico'],orient='h')
 plt.show()
 
+df_without_out.reset_index(drop=True, inplace=True)
 df_without_out.to_json('Data/data_without_outliers.json', index=False)

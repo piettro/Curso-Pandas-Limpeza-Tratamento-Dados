@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 import numpy as np
 
 data = pd.read_json('Data/data_without_churn_empty.json')
